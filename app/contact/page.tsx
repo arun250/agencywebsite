@@ -53,16 +53,17 @@ export default function ContactSection() {
             <h3 className="text-2xl font-bold mb-8 text-teal-600">Multiple Ways to Connect</h3>
             <div className="space-y-6">
               {[
-                { label: "Business Inquiries", email: "arun250393@gmail.com", desc: "Place orders, partnerships, & scaling." },
-                { label: "Support", email: "arun250393@gmail.com", desc: "Queries or product technical support." }
+                { label: "Business Inquiries", email: "arun250393@gmail.com", desc: "Place orders, partnerships, & scaling.", phone:"+919597238891" },
+                { label: "Support", email: "arun250393@gmail.com", desc: "Queries or product technical support.", phone:"+919597238891" }
               ].map((item, i) => (
                 <div key={i} className="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm">
-                  <p className="text-sm font-bold text-slate-900 mb-3">{item.label}</p>
+                  <p className="text-xl font-bold text-slate-900 mb-3">{item.label}</p>
                   <div className="flex items-center gap-3 text-teal-600 mb-2">
                     <Mail size={18} />
-                    <span className="font-semibold">{item.email}</span>
+                    <span className="text-xl font-semibold">{item.email}</span>
                   </div>
-                  <p className="text-xs text-slate-500">{item.desc}</p>
+                    <p className="text-xl text-slate-500 mt-2">{item.phone}</p>
+                  <p className="text-xl  text-slate-500 mt-2">{item.desc}</p>
                 </div>
               ))}
             </div>
